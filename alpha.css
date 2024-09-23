@@ -1,0 +1,469 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: "Source Sans 3", sans-serif;
+    background-image: url(./IMAGE/banner.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+
+}
+nav{
+    /* background-color: aqua; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* every content will be in center */
+    padding: 0.2rem 1rem;
+}
+#left>h1{
+    color: white;
+    font-size: 1rem;
+    margin: 0;
+}
+#left>h1>span{
+    font-weight: 100;
+}
+#right>#cont{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+}
+#cont>li>a{
+    color: white;
+    text-decoration: none; 
+    /* to remove the underline */
+    padding: 0.4rem 1rem;
+    /* for given space between to name */
+    display: block;
+
+}
+#cont>li>a>button{
+    font-size: 1rem;
+    /* increse size */
+    padding: 0.2rem 1rem;
+    border: 2px solid rgb(222,216,216);
+    /* border size increse */
+    color: white;
+    /* giving color to the sign upname  */
+    background-color: transparent;
+    /* transparant the sign up name */
+}
+/* --------------------dropdown----------------------------------- */
+#menu{
+    list-style-type: none;
+    /* to remove dot circle */
+    padding: 0;
+    background-color: white;
+    position: absolute;
+    /* content will cannot occuping space */
+    top: 100%;
+    right: 0%;
+    width: 180%;
+    display: none;
+
+}
+#drop:hover #menu{
+    display: block;
+    /* to show the dropdown content of layout */
+}
+#menu>li>a{
+    color: grey;
+    text-decoration: none;
+    display: block;
+    border-bottom: 2px solid rgb(223, 231, 231);
+    padding: 0.5rem;
+}
+#menu>li>a:hover{
+    background-color: orangered;
+    color: white;
+
+}
+#drop{
+    position: relative;
+    /* content of layout is show */
+}
+#menu1{
+    list-style-type: none;
+    padding: 0;
+    background-color: white;
+    position: absolute;
+    top: 100%;
+    right: 50%;
+    width: 150%;
+    display: none;
+}
+#menu1>li>a{
+    color: grey;
+    text-decoration: none;
+    display: block;
+    border-bottom: 2px solid rgb(223, 231, 231);
+    padding: 0.5rem;
+
+
+}
+#menu1>li>a:hover{
+    background-color: orangered;
+    color: white;
+
+}
+#menu1{
+    display: block;
+    position: relative;
+}
+/* ----------------------------------Alpha----------------------------------------- */
+
+#alpha{
+    text-align: center;
+    /* content is come side by side  example sign up and learn more*/
+    margin-top: 8rem;
+    
+}
+#alpha>h2{
+    color: white;
+    /* colour to the alpha name */
+    font-size: 3rem;
+    font-weight: 300;
+    /* to reduce the thickness or increse the thikness of alpha name */
+    margin-bottom: 0;
+    /* reduce the gap between alpha and down side content */
+}
+#alpha>p{
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 300;
+    margin-bottom: 2rem;
+}
+#alpha>button{
+    width:12% ;
+    /* increse the longness of sign up buttton */
+    height: 3rem;
+    /* increse the size of button */
+    border-radius: 5px;
+    /* given space between signup and learn more content */
+    border: none;
+    color: gray;
+    margin-right: 1rem;
+    /* given space between signup and learn more content */
+
+}
+#alpha>#Learn{
+    background-color: transparent;
+    border: 2px solid rgb(205, 201, 201);
+    color: white;
+
+}
+/* ------------------------------mobile-------------------------------------------- */
+#mobile{
+    /* text-align: center; */
+    margin: auto;
+    width: 70%;
+    /* image will be in center */
+    background-color: white;
+    text-align: center;
+    border-radius: 5px;
+    /* to curve the edges  */
+    padding-top: 1rem;
+    /* inside border we give padding for spacing */
+    margin-top: 15rem;
+    /* space between background and white content page */
+}
+#mobile>h2{
+    color: rgb(122, 117, 117);
+    font-size: 2rem;
+    font-weight: 300;
+    
+}
+#mobile>p{
+    color: gray;
+    font-weight: 300;
+    font-size: 1.2rem;
+    border-top: 2px solid rgb(198, 193, 193);
+    /* it is use to given line between two content */
+    width: 60%;
+    /* size of line */
+    margin: auto;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+
+}
+#mobile>img{
+    width: 100%;
+}
+#sign{
+    text-align: center;
+    background-color: rgba(233, 140, 106, 0.847);
+    padding-bottom: 2rem;
+    padding-top: 2rem;
+
+}
+#sign>h1{
+    color: white;
+    font-weight: 300;
+    font-size: 3rem;
+    margin-bottom: 0;
+    /* background-color: red; */
+}
+#sign>p{
+    font-weight: 300;
+    color: white;
+    margin-top: 0;
+    padding-top: 0;
+    /* background-color: aqua; */
+    
+    
+}
+#sign>button{
+    color: rgba(233, 140, 106, 0.847);
+    background-color: white;
+    width: 8%;
+    height: 2.5rem;
+    border-radius: 5px;
+    border: none;
+    
+    
+}
+/* -----------------------------------icon-------------------------------------- */
+#icon{
+    background-color: white;
+    width: 70%;
+    margin: auto;
+    margin-top: 2rem auto auto auto;
+    border-radius: 5px;
+    padding: 2rem;
+    box-sizing: border-box;
+}
+#icon>div{
+    /* background-color: blue; */
+    width: 48%;
+    /* size of the box */
+    display: inline-block;
+    /* it will contain another content in same side */
+    text-align: center;
+}
+.fa-bolt-lightning{
+    background-color: #e89980;
+    color: white;
+    border-radius: 100%;
+    /* background in circle */
+    padding: 1rem 1.5rem;
+    /* to increse the size of electric logo */
+    font-size: 2rem;
+    /* to increse the logo size */
+
+}
+.fa-chart-area{
+    background-color: #7fcdb8 ;
+    color: white;
+    border-radius: 100%;
+    /* background in circle */
+    padding: 1rem 1rem;
+    /* to increse the size of electric logo */
+    font-size: 2rem;
+    /* to increse the logo size */
+
+}
+.fa-cloud{
+    background-color: #90b0ba ;
+    color: white;
+    border-radius: 100%;
+    /* background in circle */
+    padding: 1.5rem 1.5rem;
+    /* to increse the size of electric logo */
+    font-size: 2rem;
+    /* to increse the logo size */
+
+}
+.fa-lock{
+    background-color: #e5cb95 ;
+    color: white;
+    border-radius: 100%;
+    /* background in circle */
+    padding: 1.5rem 1.5rem;
+    /* to increse the size of electric logo */
+    font-size: 2rem;
+    /* to increse the logo size */
+}
+#icon>div>h2{
+    font-size: 1.5rem;
+    font-weight: 300;
+}
+#icon>div>p{
+    font-weight: 300;
+    /* changing the size of alphabates */
+}
+#div1{
+    border-right: 2px solid #e5e5e5;
+    /* it usue for giving  divided line and color */
+    border-bottom: 2px solid #e5e5e5;
+    position: relative;
+    top:1px;
+    left: 3.4px;
+}
+#div4{
+    border-left: 2px solid #e5e5e5;
+    border-top: 2px solid #e5e5e5;
+}
+#icon>div{
+    padding-top: 2rem;
+}
+#cards{
+    /* background-color: red; */
+    width: 70%;
+    margin: 2rem  auto auto auto;
+
+
+}
+#cards>div{
+    background-color: white;
+    width: 40%;
+    text-align: center;
+    padding-bottom: center;
+    padding-bottom: 2rem;
+    border-radius: 5px;
+}
+#cards>div>img{
+    width: 100%;
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
+}
+#cards{
+    display: flex;
+    justify-content: space-between;
+}
+footer{
+    padding-top: 4rem;
+    padding-bottom: 5rem;
+}
+footer>#top{
+    display: flex;
+    justify-content: space-between;
+    /* background-color: red; */
+ width: 20%;
+ /* height: 3rem; */
+ margin: auto;
+
+}
+footer>#top>i{
+    font-size: 1.8rem;
+    opacity: 0.5;
+}
+footer>#down{
+    display: flex;
+    width: 40%;
+    margin: auto;
+    justify-content: space-between;
+
+}
+footer>#down>p{
+    font-size: 16px;
+    opacity: 0.5;
+}
+#footer>#down>:nth-child(2n+0){
+    
+}
+/* ----------------------box--------------------------- */
+#body{
+    display: none;
+}
+/* ------------------------------------mobile version------------------------------------------bz */
+@media(max-width:600px){ 
+    /* the this condition is satisfied then the mobile version display */
+    body{
+        
+        background-size: 200%;
+       /* background-position: center; */
+       /* mobile version in middle */
+       background-position-x: center;
+       /* only for horizontal */
+    
+    }#box{
+        display: inline-block;
+        color: white;
+        background-color:rgb(213,204,204) ;
+        padding: 0.5rem 1rem;
+        border-radius: 5px;
+        margin-top: 0.5rem;
+        margin-left: 0.5rem;
+    }
+    nav{
+        display: none;
+    }
+    #alpha{
+       width: 80%;
+       margin: auto;
+        margin-top: 0rem;
+        
+    }
+    #alpha>h2{
+        
+        font-size: 2rem;
+    
+    }
+    #alpha>p{
+        font-size: 1.1rem;
+
+    }
+    #alpha>button{
+        width:100% ;
+       margin-bottom: 1rem;
+       
+    }
+    #mobile{
+       
+        width: 100%;
+        border-radius: 0px;
+        padding-top: 1rem;
+        margin-top: 2rem;
+        
+    }
+    #mobile>h2{
+        
+        font-size: 1.5rem;
+        
+    }
+    #mobile>p{
+        width: 90%;
+        
+    }
+    br{
+        display: none;
+    }
+    icon{
+        width: 100%;
+        margin-top: 1rem auto auto auto;
+    }
+    #icon>div{
+       
+        width: 100%;
+        background-color: #e5e5e5;
+    }
+    #div1{
+        border-right: none;
+        border-bottom: none;
+        position: relative;
+        top:0px;
+        left: 0px;
+    }
+    #div4{
+        border-left: none;
+        border-top: none;
+    }
+    #cards{
+        /* background-color: red; */
+        width: 70%;
+        margin: 1rem  auto auto auto;
+        display: block;
+    
+    
+    }
+    #cards>div{
+        width: 100%;
+        margin-top: 1rem;
+    }
+
+}
+
+
